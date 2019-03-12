@@ -1,0 +1,28 @@
+dn: ou=usuaris,dc=asix2,dc=cat
+objectClass: organizationalUnit
+ou: usuaris
+
+dn: ou=grups,dc=asix2,dc=cat
+objectClass: organizationalUnit
+ou: Grups
+
+dn: cn=alumnes,ou=grups,dc=asix2,dc=cat
+objectClass: posixGroup
+cn: alumnes
+gidNumber: 5000
+
+dn: uid=donaldtrump,ou=usuaris,dc=asix2,dc=cat
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: donaldtrump
+sn: Trump
+givenName: Donald
+cn: Donald Trump
+displayName: Donald Trump
+uidNumber: 10000
+gidNumber: 5000
+userPassword: donaldtrumpldap
+gecos: Donald Trump
+loginShell: /bin/bash
+homeDirectory: /home/trump_donald
